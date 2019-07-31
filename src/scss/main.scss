@@ -17,4 +17,53 @@ body {
   border: 16px solid $darkblue;
   color: $darkblue;
   font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+
+.header {
+  margin: 0 auto 200px auto;
+  padding-top: 128px;
+  width: 82%;
+}
+
+.hero {
+  max-width: 781px;
+  width: 100%;
+  &__heading {
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 3.5rem;
+    margin-bottom: 16px;
+  }
+  &__link {
+    color: $blue;
+    font-weight: 500;
+  }
+  &__paragraph {
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 2.25rem;
+    margin-bottom: 60px;
+    max-width: 681px;
+    width: 100%;
+  }
+  &__mail {
+    color: $blue;
+    display: block;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 2rem;
+    max-width: 358px;
+    text-decoration: none;
+    width: 100%;
+    &::after {
+      background-color: $blue;
+      border-radius: 41px;
+      content: "";
+      display: block;
+      height: 2px;
+      margin-top: 8px;
+      width: 100%;
+    }
+  }
 }

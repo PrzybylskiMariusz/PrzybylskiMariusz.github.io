@@ -22,14 +22,16 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <header class="hero">
-      <img class="hero__image" src="assets/img/avatar.svg" alt="Zdjęcie profilowe Mariusz Przybylski.">
-      <h1 class="hero__heading">Hey there! 👋 My name is Mariusz and I’m an aspiring Frontend developer and a keen UI/UX designer.</h1>
-      <p class="hero__paragraph">You might be interested in checking the list of my skills. Don’t forget to  have a glimpse at my projects. Currently I’m looking for a new challenges so if you have one - contact me 😊</p>
-      <a class="hero__mail" href="mailto:przybylski.mariusz1987@gmail.com?subject=Online%20CV%20-%20new%20opportunity">przybylski.mariusz1987@gmail.com</a>
+    <header class="header">
+      <section class="hero">
+        <img class="hero__image" src="assets/img/avatar.svg" alt="Zdjęcie profilowe Mariusz Przybylski.">
+        <h1 class="hero__heading">Hey there! 👋 My name is Mariusz and I’m an aspiring Frontend developer and a keen UI/UX designer.</h1>
+        <p class="hero__paragraph">You might be interested in checking the list of <a class="hero__link" href="#mySkills">my skills</a>. Don’t forget to  have a glimpse at <a class="hero__link" href="#myProjects">my projects</a>. Currently I’m looking for a new challenges so if you have one - <a class="hero__link" href="#contactMe">contact me</a> 😊</p>
+        <a class="hero__mail" href="mailto:przybylski.mariusz1987@gmail.com?subject=Online%20CV%20-%20new%20opportunity">przybylski.mariusz1987@gmail.com</a>
+      </section>
     </header>
     <main class="main">
-      <section class="skills">
+      <section class="skills" id="mySkills">
         <h2 class="skills__heading">My sklills</h2>
         <section class="content">
           <h3 class="content__heading content__heading--green">Working knowledge</h3>
@@ -71,7 +73,7 @@
           </ul>
         </section>
       </section>
-      <section class="projects">
+      <section class="projects" id="myProjects">
         <h2 class="projects__heading">Recent projects</h2>
         <p class="projects__paragraph">I started my frontend developer path in 2018. Since then, I’ve built some projects. Here’s the list of the things I’ve done so far.</p>
         <ul class="repos">
@@ -84,7 +86,7 @@
         </ul>
       </section>
     </main>
-    <footer class="contact">
+    <footer class="contact" id="contactMe">
       <h2 class="contact__heading">Contact me</h2>
       <p class="contact__paragraph">I’m open for new opportunities. If you have one for me we should talk!</p>
       <ul class="icons">
