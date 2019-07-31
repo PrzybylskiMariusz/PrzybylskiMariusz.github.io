@@ -67,3 +67,78 @@ body {
     }
   }
 }
+
+.skills {
+  margin: 0 auto;
+  width: 82%;
+  &__heading {
+    border-bottom: 2px solid $lightergrey;
+    font-size: 2.25rem;
+    font-weight: 600;
+    line-height: 3rem;
+    margin: 0;
+    padding-bottom: 16px;
+  }
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  margin-top: 128px;
+  &:last-child{
+    margin-bottom: 128px;
+  }
+  &__heading {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2.75rem;
+    margin: 0;
+    &--green::before{
+      background-color: $green;
+      border-radius: 8px;
+      content: "";
+      display: block;
+      margin-bottom: 24px;
+      max-width: 80px;
+      width: 100%;
+      height: 4px;
+    }
+    &--red::before{
+      background-color: $red;
+      border-radius: 8px;
+      content: "";
+      display: block;
+      margin-bottom: 24px;
+      max-width: 80px;
+      width: 100%;
+      height: 4px;
+    }
+    &--gold::before{
+      background-color: $gold;
+      border-radius: 8px;
+      content: "";
+      display: block;
+      margin-bottom: 24px;
+      max-width: 80px;
+      width: 100%;
+      height: 4px;
+    }
+  }
+  &__list {
+    color: $greyblue;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+    margin: 24px 0 0 0;
+    &--green {
+      list-style-image: url(../assets/img/check-circle-green.png);
+    }
+    &--red {
+      list-style-image: url(../assets/img/check-circle-red.png);
+    }
+    &--gold {
+      list-style-image: url(../assets/img/check-circle-gold.png);
+    }
+  }
+
+}
