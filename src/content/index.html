@@ -22,7 +22,78 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <h1>Hello world - with simple PWA support!</h1>
+    <header class="hero">
+      <img class="hero__image" src="assets/img/avatar.svg" alt="Zdjęcie profilowe Mariusz Przybylski.">
+      <h1 class="hero__heading">Hey there! 👋 My name is Mariusz and I’m an aspiring Frontend developer and a keen UI/UX designer.</h1>
+      <p class="hero__paragraph">You might be interested in checking the list of my skills. Don’t forget to  have a glimpse at my projects. Currently I’m looking for a new challenges so if you have one - contact me 😊</p>
+      <a class="hero__mail" href="mailto:przybylski.mariusz1987@gmail.com?subject=Online%20CV%20-%20new%20opportunity">przybylski.mariusz1987@gmail.com</a>
+    </header>
+    <main class="main">
+      <section class="skills">
+        <h2 class="skills__heading">My sklills</h2>
+        <section class="content">
+          <h3 class="content__heading content__heading--green">Working knowledge</h3>
+          <ul class="content__list content__list--green">
+            <li class="content__item">Semantic HTML5</li>
+            <li class="content__item">CSS grid</li>
+            <li class="content__item">Flexbox</li>
+            <li class="content__item">Forms</li>
+            <li class="content__item">Markdown</li>
+            <li class="content__item">JS: DOM manipulations</li>
+            <li class="content__item">JS: Local storage</li>
+            <li class="content__item">SASS</li>
+            <li class="content__item">Figma</li>
+            <li class="content__item">Adobe XD & Photoshop</li>
+          </ul>
+        </section>
+        <section class="content">
+          <h3 class="content__heading content__heading--red">Know something about</h3>
+          <ul class="content__list content__list--red">
+            <li class="content__item">JavaScript ES6+ features</li>
+            <li class="content__item">Progressive web apps</li>
+            <li class="content__item">CSS animations</li>
+            <li class="content__item">Git</li>
+            <li class="content__item">Working with API</li>
+            <li class="content__item">Accessibility</li>
+            <li class="content__item">Server side rendering</li>
+          </ul>
+        </section>
+        <section class="content">
+          <h3 class="content__heading content__heading--gold">Want to learn</h3>
+          <ul class="content__list content__list--gold">
+            <li class="content__item">React JS</li>
+            <li class="content__item">Typescript</li>
+            <li class="content__item">Node.JS</li>
+            <li class="content__item">Gatsby</li>
+            <li class="content__item">Electron</li>
+            <li class="content__item">Websockets</li>
+            <li class="content__item">NPM Scripts</li>
+          </ul>
+        </section>
+      </section>
+      <section class="projects">
+        <h2 class="projects__heading">Recent projects</h2>
+        <p class="projects__paragraph">I started my frontend developer path in 2018. Since then, I’ve built some projects. Here’s the list of the things I’ve done so far.</p>
+        <ul class="repos">
+          <li class="repos__list">
+            <img class="repos__icon" src="assets/img/github-icon-big.png" alt="github icon.">
+            <h4 class="repos__title">Repo name</h4>
+            <p class="repos__description">Repo description</p>
+            <div class="repos__links"><a class="repos__links repos__links--demo" href="#">Demo</a><a class="repos__links repos__links--github" href="#">Github</a></div>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="contact">
+      <h2 class="contact__heading">Contact me</h2>
+      <p class="contact__paragraph">I’m open for new opportunities. If you have one for me we should talk!</p>
+      <ul class="icons">
+        <li class="icons__item"><a class="icons__link icons__link--facebook" href="#"><img src="assets/img/fb-icon.png" alt="facebook icon."></a></li>
+        <li class="icons__item"><a class="icons__link icons__link--github" href="#"><img src="assets/img/github-icon-small.png" alt="github icon."></a></li>
+        <li class="icons__item"><a class="icons__link icons__link--behance" href="#"><img src="assets/img/behance-icon.png" alt="behance icon."></a></li>
+      </ul>
+      <a href="mailto:przybylski.mariusz1987@gmail.com?subject=Online%20CV%20-%20new%20opportunity">przybylski.mariusz1987@gmail.com</a>
+    </footer>
 
     <script src="js/main.js"></script>
   </body>
