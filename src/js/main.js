@@ -18,8 +18,8 @@ fetch("https://api.github.com/users/PrzybylskiMariusz/repos")
       <p class="repos__description">${description}</p>
     </div>
     <div class="repos__links">
-      <a class="repos__link repos__link--demo" href="${homepage}"><img class="repos__image" src="assets/img/demo-icon.png" alt="demo icon.">Demo</a>
-      <a class="repos__link repos__link--github" href="${html_url}"><img class="repos__image" src="assets/img/code-icon.png" alt="demo icon.">Github</a>
+      <a class="repos__link repos__link--demo" href="${homepage}" target="_blank" rel="noopener noreferrer"><img class="repos__image" src="assets/img/demo-icon.png" alt="demo icon.">Demo</a>
+      <a class="repos__link repos__link--github" href="${html_url}" target="_blank" rel="noopener noreferrer"><img class="repos__image" src="assets/img/code-icon.png" alt="demo icon.">Github</a>
     </div>
   </li>`;
   }
