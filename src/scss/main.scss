@@ -331,6 +331,9 @@ body {
     background: $white;
     box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
     border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     max-width: 580px;
     width: 100%;
     @media (max-width: $mobile) {
@@ -374,6 +377,7 @@ body {
     border-bottom-right-radius: 8px;
     display: flex;
     justify-content: flex-end;
+    align-self: flex-end;
     margin: 0;
     padding: 16px 48px;
     text-align: right;
