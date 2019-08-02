@@ -6,6 +6,7 @@
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *, *:before, *:after {
@@ -18,13 +19,22 @@ body {
   color: $darkblue;
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
+  @media (max-width: $mobile) {
+    border: none;
+  }
 }
 
 .header {
-  margin: 0 auto 200px auto;
+  margin: 0 auto;
   max-width: 1184px;
-  padding: 128px 16px 0 16px;
+  padding: 128px 24px 0 24px;
   width: 100%;
+  @media (max-width: $tablet) {
+    padding: 64px 16px 0 16px;
+  }
+  @media (max-width: $mobile) {
+    max-width: 100%;
+  }
 }
 
 .hero {
@@ -32,12 +42,20 @@ body {
   width: 100%;
   &__image {
     margin: 0 0 32px 0;
+    @media (max-width: $tablet) {
+      margin: 0 0 16px 0;
+      width: 80px;
+    }
   }
   &__heading {
     font-size: 2.5rem;
     font-weight: 600;
     line-height: 3.5rem;
     margin: 0 0 16px 0;
+    @media (max-width: $tablet) {
+      font-size: 1.625rem;
+      line-height: 2.25rem;
+    }
   }
   &__link {
     color: $blue;
@@ -50,6 +68,10 @@ body {
     margin: 0 0 60px 0;
     max-width: 681px;
     width: 100%;
+    @media (max-width: $tablet) {
+      font-size: 0.875rem;
+      line-height: 1.625rem;
+    }
   }
   &__mail {
     color: $blue;
@@ -68,14 +90,28 @@ body {
       height: 2px;
       margin-top: 8px;
       width: 100%;
+      @media (max-width: $tablet) {
+        margin-top: 4px;
+      }
     }
+    @media (max-width: $tablet) {
+      font-size: 0.875rem;
+      line-height: 1.5rem;
+      max-width: 251px;
+    }
+  }
+  @media (max-width: $tablet) {
+    width: 60%;
+  }
+  @media (max-width: $mobile) {
+    width: 100%;
   }
 }
 
 .skills {
   margin: 0 auto;
   max-width: 1184px;
-  padding: 0 16px;
+  padding: 200px 24px 0 24px;
   width: 100%;
   &__heading {
     border-bottom: 2px solid $lightergrey;
@@ -84,6 +120,20 @@ body {
     line-height: 3rem;
     margin: 0;
     padding-bottom: 16px;
+    @media (max-width: $tablet) {
+      font-size: 1.5rem;
+      line-height: 2rem;
+      padding-bottom: 12px;
+    }
+    @media (max-width: $mobile) {
+      text-align: center;
+    }
+  }
+  @media (max-width: $tablet) {
+    padding: 120px 24px 0 24px;
+  }
+  @media (max-width: $mobile) {
+    padding: 120px 16px 0 16px;
   }
 }
 
@@ -93,6 +143,9 @@ body {
   margin-top: 128px;
   &:last-child{
     margin-bottom: 128px;
+    @media (max-width: $tablet) {
+      margin-bottom: 80px;
+    }
   }
   &__heading {
     font-size: 2rem;
@@ -108,6 +161,10 @@ body {
       max-width: 80px;
       width: 100%;
       height: 4px;
+      @media (max-width: $tablet) {
+        max-width: 40px;
+        margin-bottom: 8px;
+      }
     }
     &--red::before{
       background-color: $red;
@@ -118,6 +175,10 @@ body {
       max-width: 80px;
       width: 100%;
       height: 4px;
+      @media (max-width: $tablet) {
+        max-width: 40px;
+        margin-bottom: 8px;
+      }
     }
     &--gold::before{
       background-color: $gold;
@@ -128,6 +189,14 @@ body {
       max-width: 80px;
       width: 100%;
       height: 4px;
+      @media (max-width: $tablet) {
+        max-width: 40px;
+        margin-bottom: 8px;
+      }
+    }
+    @media (max-width: $tablet) {
+      font-size: 1.375rem;
+      line-height: 2rem;
     }
   }
   &__list {
@@ -138,23 +207,75 @@ body {
     grid-column-gap: 24px;
     grid-template-columns: repeat(2, 1fr);
     line-height: 2.5rem;
+    list-style-type: none;
     margin: 24px 0 0 0;
-    &--green {
-      list-style-image: url(../assets/img/check-circle-green.png);
+    padding: 0;
+    @media (max-width: $tablet) {
+      font-size: .875rem;
+      line-height: 2.25rem;
     }
-    &--red {
-      list-style-image: url(../assets/img/check-circle-red.png);
+    @media (max-width: $mobile) {
+      grid-template-columns: 1fr;
     }
-    &--gold {
-      list-style-image: url(../assets/img/check-circle-gold.png);
+  }
+  @media (max-width: $tablet) {
+    margin-top: 62px;
+  }
+  &__item{
+    display: flex;
+    align-items: center;
+    &--green::before{
+      background: url(../assets/img/check-circle-green.png);
+      background-size: cover;
+      content: "";
+      display: block;
+      margin-right: 12px;
+      width: 18px;
+      height: 18px;
+      @media (max-width: $tablet) {
+        width: 12px;
+        height: 12px;
+        margin-right: 12px;
+      }
     }
+    &--red::before{
+      background: url(../assets/img/check-circle-red.png);
+      background-size: cover;
+      content: "";
+      display: block;
+      margin-right: 12px;
+      width: 18px;
+      height: 18px;
+      @media (max-width: $tablet) {
+        width: 12px;
+        height: 12px;
+        margin-right: 12px;
+      }
+    }
+    &--gold::before{
+      background: url(../assets/img/check-circle-gold.png);
+      background-size: cover;
+      content: "";
+      display: block;
+      margin-right: 12px;
+      width: 18px;
+      height: 18px;
+      @media (max-width: $tablet) {
+        width: 12px;
+        height: 12px;
+        margin-right: 12px;
+      }
+    }
+  }
+  @media (max-width: $mobile) {
+    grid-template-columns: 1fr;
   }
 }
 
 .projects {
   background-color: $lightgrey;
   width: 100%;
-  padding: 128px 16px;
+  padding: 128px 24px;
   &__container {
     margin: 0 auto;
     max-width: 1184px;
@@ -165,6 +286,14 @@ body {
     font-weight: 600;
     line-height: 3rem;
     margin: 0 0 16px 0;
+    @media (max-width: $tablet) {
+      font-size: 1.5rem;
+      line-height: 2rem;
+      margin: 0 0 8px 0;
+    }
+    @media(max-width: $mobile) {
+      text-align: center;
+    }
   }
   &__paragraph {
     font-size: 1.25rem;
@@ -173,6 +302,21 @@ body {
     margin: 0 0 60px 0;
     max-width: 580px;
     width: 100%;
+    @media (max-width: $tablet) {
+      font-size: 0.875rem;
+      line-height: 1.625rem;
+      margin: 0 0 32px 0;
+    }
+    @media(max-width: $mobile) {
+      text-align: center;
+      max-width: 100%;
+    }
+  }
+  @media (max-width: $tablet) {
+    padding: 80px 24px;
+  }
+  @media (max-width: $mobile) {
+    padding: 80px 16px;
   }
 }
 
@@ -189,24 +333,40 @@ body {
     border-radius: 8px;
     max-width: 580px;
     width: 100%;
+    @media (max-width: $mobile) {
+      max-width: 100%;
+    }
   }
   &__info {
     padding: 48px 48px 0 48px;
   }
   &__icon {
     margin-bottom: 16px;
+    @media (max-width: $tablet) {
+      width: 40px;
+    }
   }
   &__title {
     font-size: 1.25rem;
     font-weight: 600;
     line-height: 2.25rem;
     margin: 0 0 8px 0;
+    @media (max-width: $tablet) {
+      font-size: 1rem;
+      line-height: 1.5rem;
+      margin: 0 0 4px 0;
+    }
   }
   &__description {
     font-size: 1.125rem;
     font-weight: 300;
     line-height: 2rem;
     margin: 0 0 48px 0;
+    @media (max-width: $tablet) {
+      font-size: .875rem;
+      line-height: 1.625rem;
+      margin: 0 0 32px 0;
+    }
   }
   &__links {
     background-color: $lightgrey;
@@ -219,6 +379,9 @@ body {
     text-align: right;
     text-decoration: none;
     width: 100%;
+    @media (max-width: $tablet) {
+      padding: 10px 32px;
+    }
   }
   &__link {
     color: $blue;
@@ -233,10 +396,25 @@ body {
       border-right: 2px solid $lightergrey;
       margin: 0 24px 0 0;
       padding-right: 24px;
+      @media (max-width: $tablet) {
+        margin: 0 16px 0 0;
+        padding-right: 16px;
+      }
+    }
+    @media (max-width: $tablet) {
+      font-size: .875rem;
+      line-height: 1.75rem;
     }
   }
-  &__image{
+  &__image {
     margin-right: 8px;
+    @media (max-width: $tablet) {
+      width: 20px;
+      margin-right: 6px;
+    }
+  }
+  @media (max-width: $mobile) {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -244,7 +422,7 @@ body {
   background-color: $darkblue;
   color: $white;
   width: 100%;
-  padding: 128px 16px;
+  padding: 128px 24px;
   &__container {
     margin: 0 auto;
     max-width: 1184px;
@@ -264,6 +442,15 @@ body {
       max-width: 80px;
       width: 100%;
       height: 4px;
+      @media (max-width: $tablet) {
+        max-width: 40px;
+        margin-bottom: 8px;
+      }
+    }
+    @media (max-width: $tablet) {
+      font-size: 1.5rem;
+      line-height: 2rem;
+      margin: 0 0 8px 0;
     }
   }
   &__paragraph {
@@ -273,6 +460,12 @@ body {
     margin: 0 0 20px 0;
     max-width: 580px;
     width: 100%;
+    @media (max-width: $tablet) {
+      font-size: .875rem;
+      line-height: 1.625rem;
+      margin: 0 0 30px 0;
+      max-width: 325px;
+    }
   }
   &__mail {
     color: $blue;
@@ -291,7 +484,21 @@ body {
       height: 2px;
       margin-top: 8px;
       width: 100%;
+      @media (max-width: $tablet) {
+        margin-top: 4px;
+      }
     }
+    @media (max-width: $tablet) {
+      font-size: 0.875rem;
+      line-height: 1.5rem;
+      max-width: 251px;
+    }
+  }
+  @media (max-width: $tablet) {
+    padding: 120px 24px;
+  }
+  @media (max-width: $mobile) {
+    padding: 120px 16px;
   }
 }
 
@@ -303,5 +510,8 @@ body {
   padding: 0;
   &__item {
     margin-right: 24px;
+  }
+  @media (max-width: $tablet) {
+    margin: 0 0 32px 0;
   }
 }
