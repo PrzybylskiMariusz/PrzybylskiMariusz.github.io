@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Mariusz - online CV</title>
+    <meta name="description" content="All my frontend skills in one place" />
+
+    <!-- Title -->
+    <meta property="og:title" content="Mariusz Przybylski - online CV" />
+    <!-- OPTIONAL description. 2-4 sentences. -->
+    <meta property="og:description" content="At this point, everyone can check my frontend skills and the development directions that interest me. Feel free to contact me." />
+    <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
+    <meta property="og:url" content="https://przybylskimariusz.github.io/" />
+    <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
+    <meta property="og:image" content="https://przybylskimariusz.github.io/assets/img/cover.png" />
+
+    <link rel="manifest" href="manifest.json" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <section class="hero">
+        <img class="hero__image" src="assets/img/avatar.svg" alt="Zdjęcie profilowe Mariusz Przybylski.">
+        <h1 class="hero__heading">Hey there! 👋 My name is Mariusz and I’m an aspiring Frontend developer and a creative UI/UX designer.</h1>
+        <p class="hero__paragraph">You might be interested in checking the list of <a class="hero__link" href="#mySkills">my skills</a>. Don’t forget to  have a glimpse at <a class="hero__link" href="#myProjects">my projects</a>. Currently I’m looking for a new challenges so if you have one - <a class="hero__link" href="#contactMe">contact me</a> 😊</p>
+        <a class="hero__mail" href="mailto:przybylski.mariusz1987@gmail.com?subject=Online%20CV%20-%20new%20opportunity">przybylski.mariusz1987@gmail.com</a>
+      </section>
+    </header>
+    <main class="main">
+      <section class="skills" id="mySkills">
+        <h2 class="skills__heading">My sklills</h2>
+        <section class="content">
+          <h3 class="content__heading content__heading--green">Working knowledge</h3>
+          <ul class="content__list content__list--green">
+            <li class="content__item content__item--green">Semantic HTML5</li>
+            <li class="content__item content__item--green">CSS grid</li>
+            <li class="content__item content__item--green">Flexbox</li>
+            <li class="content__item content__item--green">Forms</li>
+            <li class="content__item content__item--green">Markdown</li>
+            <li class="content__item content__item--green">JS: DOM manipulations</li>
+            <li class="content__item content__item--green">JS: Local storage</li>
+            <li class="content__item content__item--green">SASS</li>
+            <li class="content__item content__item--green">Figma</li>
+            <li class="content__item content__item--green">Adobe XD & Photoshop</li>
+          </ul>
+        </section>
+        <section class="content">
+          <h3 class="content__heading content__heading--red">Know something about</h3>
+          <ul class="content__list content__list--red">
+            <li class="content__item content__item--red">JavaScript ES6+ features</li>
+            <li class="content__item content__item--red">Progressive web apps</li>
+            <li class="content__item content__item--red">CSS animations</li>
+            <li class="content__item content__item--red">Git</li>
+            <li class="content__item content__item--red">Working with API</li>
+            <li class="content__item content__item--red">Accessibility</li>
+            <li class="content__item content__item--red">Server side rendering</li>
+          </ul>
+        </section>
+        <section class="content">
+          <h3 class="content__heading content__heading--gold">Want to learn</h3>
+          <ul class="content__list content__list--gold">
+            <li class="content__item content__item--gold">React JS</li>
+            <li class="content__item content__item--gold">Typescript</li>
+            <li class="content__item content__item--gold">Node.JS</li>
+            <li class="content__item content__item--gold">Gatsby</li>
+            <li class="content__item content__item--gold">Electron</li>
+            <li class="content__item content__item--gold">Websockets</li>
+            <li class="content__item content__item--gold">NPM Scripts</li>
+          </ul>
+        </section>
+      </section>
+      <section class="projects" id="myProjects">
+        <div class="projects__container">
+          <h2 class="projects__heading">Recent projects</h2>
+          <p class="projects__paragraph">I started my frontend developer path in 2018. Since then, I’ve built some projects. Here’s the list of the things I’ve done so far.</p>
+          <ul class="repos repos--js">
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="contact" id="contactMe">
+      <div class="contact__container">
+        <h2 class="contact__heading">Contact me</h2>
+        <p class="contact__paragraph">I’m open for new opportunities. If you have one for me we should talk!</p>
+        <ul class="icons">
+          <li class="icons__item"><a class="icons__link icons__link--facebook" href="https://www.facebook.com/coridMP/" target="_blank" rel="noopener noreferrer"><img src="assets/img/fb-icon.png" alt="facebook icon."></a></li>
+          <li class="icons__item"><a class="icons__link icons__link--github" href="https://github.com/PrzybylskiMariusz/" target="_blank" rel="noopener noreferrer"><img src="assets/img/github-icon-small.png" alt="github icon."></a></li>
+          <li class="icons__item"><a class="icons__link icons__link--behance" href="https://www.behance.net/przybylskimariusz" target="_blank" rel="noopener noreferrer"><img src="assets/img/behance-icon.png" alt="behance icon."></a></li>
+        </ul>
+        <a class="contact__mail" href="mailto:przybylski.mariusz1987@gmail.com?subject=Online%20CV%20-%20new%20opportunity">przybylski.mariusz1987@gmail.com</a>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
