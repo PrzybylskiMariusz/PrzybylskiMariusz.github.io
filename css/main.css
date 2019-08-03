@@ -639,6 +639,9 @@ body {
         max-width: 100%; } }
   .repos__info {
     padding: 48px 48px 0 48px; }
+    @media (max-width: 920px) {
+      .repos__info {
+        padding: 32px 32px 0 32px; } }
   .repos__icon {
     margin-bottom: 16px; }
     @media (max-width: 1140px) {
