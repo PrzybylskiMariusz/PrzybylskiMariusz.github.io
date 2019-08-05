@@ -1,0 +1,97 @@
+.contact {
+    background-color: $darkblue;
+    color: $white;
+    width: 100%;
+    padding: 128px 24px;
+    &__container {
+      margin: 0 auto;
+      max-width: 1184px;
+      width: 100%;
+    }
+    &__heading {
+      font-size: 2rem;
+      font-weight: 500;
+      line-height: 2.75rem;
+      margin: 0 0 20px 0;
+      &::before{
+        background-color: $white;
+        border-radius: 8px;
+        content: "";
+        display: block;
+        margin-bottom: 24px;
+        max-width: 80px;
+        width: 100%;
+        height: 4px;
+        @media (max-width: $tablet) {
+          max-width: 40px;
+          margin-bottom: 8px;
+        }
+      }
+      @media (max-width: $tablet) {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        margin: 0 0 8px 0;
+      }
+    }
+    &__paragraph {
+      font-size: 1.25rem;
+      font-weight: 300;
+      line-height: 2.25rem;
+      margin: 0 0 20px 0;
+      max-width: 580px;
+      width: 100%;
+      @media (max-width: $tablet) {
+        font-size: .875rem;
+        line-height: 1.625rem;
+        margin: 0 0 30px 0;
+        max-width: 325px;
+      }
+    }
+    &__mail {
+      color: $blue;
+      display: block;
+      font-size: 1.25rem;
+      font-weight: 500;
+      line-height: 2rem;
+      max-width: 358px;
+      text-decoration: none;
+      width: 100%;
+      &::after {
+        background-color: $blue;
+        border-radius: 41px;
+        content: "";
+        display: block;
+        height: 2px;
+        margin-top: 8px;
+        width: 100%;
+        @media (max-width: $tablet) {
+          margin-top: 4px;
+        }
+      }
+      @media (max-width: $tablet) {
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+        max-width: 251px;
+      }
+    }
+    @media (max-width: $tablet) {
+      padding: 120px 24px;
+    }
+    @media (max-width: $mobile) {
+      padding: 120px 16px;
+    }
+}
+
+.icons {
+list-style-type: none;
+display: flex;
+align-items: center;
+margin: 0 0 48px 0;
+padding: 0;
+    &__item {
+        margin-right: 24px;
+    }
+    @media (max-width: $tablet) {
+        margin: 0 0 32px 0;
+    }
+}

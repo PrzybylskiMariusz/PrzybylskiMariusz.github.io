@@ -1,0 +1,119 @@
+.skills {
+    margin: 0 auto;
+    max-width: 1184px;
+    padding: 200px 24px 0 24px;
+    width: 100%;
+    &__heading {
+      border-bottom: 2px solid $lightergrey;
+      font-size: 2.25rem;
+      font-weight: 600;
+      line-height: 3rem;
+      margin: 0;
+      padding-bottom: 16px;
+      @media (max-width: $tablet) {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        padding-bottom: 12px;
+      }
+      @media (max-width: $mobile) {
+        text-align: center;
+      }
+    }
+    @media (max-width: $tablet) {
+      padding: 120px 24px 0 24px;
+    }
+    @media (max-width: $mobile) {
+      padding: 120px 16px 0 16px;
+    }
+}
+
+.content {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+margin-top: 128px;
+    &:last-child{
+        margin-bottom: 128px;
+        @media (max-width: $tablet) {
+        margin-bottom: 80px;
+        }
+    }
+    &__heading {
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: 2.75rem;
+        margin: 0;
+        &::before{
+        background-color: $green;
+        border-radius: 8px;
+        content: "";
+        display: block;
+        margin-bottom: 24px;
+        max-width: 80px;
+        width: 100%;
+        height: 4px;
+            .content--violet & {
+                background-color: $red;
+            }
+            .content--blue & {
+                background-color: $gold;
+            }
+            @media (max-width: $tablet) {
+                max-width: 40px;
+                margin-bottom: 8px;
+            }
+        }
+        @media (max-width: $tablet) {
+        font-size: 1.375rem;
+        line-height: 2rem;
+        }
+    }
+    &__list {
+        color: $greyblue;
+        font-size: 1.125rem;
+        font-weight: 400;
+        display: grid;
+        grid-column-gap: 24px;
+        grid-template-columns: repeat(2, 1fr);
+        line-height: 2.5rem;
+        list-style-type: none;
+        margin: 24px 0 0 0;
+        padding: 0;
+        @media (max-width: $tablet) {
+        font-size: .875rem;
+        line-height: 2.25rem;
+        }
+        @media (max-width: $mobile) {
+        grid-template-columns: 1fr;
+        }
+    }
+    @media (max-width: $tablet) {
+        margin-top: 62px;
+    }
+    &__item{
+    display: flex;
+    align-items: center;
+        &::before{
+        background-image: url(../assets/img/check-circle-green.svg);
+        background-size: cover;
+        content: "";
+        display: block;
+        margin-right: 12px;
+        width: 18px;
+        height: 18px;
+            .content--violet & {
+                background-image: url(../assets/img/check-circle-violet.svg);
+            }
+            .content--blue & {
+                background-image: url(../assets/img/check-circle-blue.svg);
+            }
+            @media (max-width: $tablet) {
+                width: 12px;
+                height: 12px;
+                margin-right: 12px;
+            }
+        }
+    }
+    @media (max-width: $mobile) {
+        grid-template-columns: 1fr;
+    }
+}
